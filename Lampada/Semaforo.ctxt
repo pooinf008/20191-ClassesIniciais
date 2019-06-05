@@ -12,4 +12,6 @@ comment5.params=
 comment5.target=void\ zerar()
 comment6.params=
 comment6.target=int\ getQtdeAbertura()
-numComments=7
+comment7.params=complementar
+comment7.target=void\ setComplementar(Semaforo)
+numComments=8

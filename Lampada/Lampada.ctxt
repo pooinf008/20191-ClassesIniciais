@@ -5,5 +5,5 @@ comment1.target=void\ acender()
 comment2.params=
 comment2.target=void\ apagar()
 comment3.params=
-comment3.target=boolean\ estaAcesa()
+comment3.target=boolean\ isAcesa()
 numComments=4

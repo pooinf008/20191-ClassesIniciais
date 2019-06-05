@@ -2,33 +2,44 @@ public class Semaforo{
     Lampada vermelha = new Lampada();
     Lampada verde = new Lampada();
     ContadorDeVoltas contador = new ContadorDeVoltas();
+    Semaforo complementar;
     
     public void abrir(){
-        if(vermelho())
-          contador.tick();
-        verde.acender();
-        vermelha.apagar();
+        if(this.vermelho())
+          this.contador.tick();
+        this.verde.acender();
+        this.vermelha.apagar();
+        if(complementar != null && complementar.verde())
+          complementar.fechar();
     }    
     
     public void fechar(){
-        vermelha.acender();
-        verde.apagar();
+        this.vermelha.acender();
+        this.verde.apagar();
+        if(complementar != null && complementar.vermelho())
+          complementar.abrir();
     }    
     
     public boolean vermelho(){
-        return vermelha.estaAcesa();
+        return this.vermelha.isAcesa();
     }    
     
     public boolean verde(){
-        return verde.estaAcesa();
+        return this.verde.isAcesa();
     } 
     
     public void zerar(){
-        contador.reset();
+        this.contador.reset();
     } 
     
     public int getQtdeAbertura(){
-        return contador.buscarQtdeVoltas();
+        return this.contador.getQtdeVoltas();
+    }
+    
+    public void setComplementar(Semaforo complementar){
+        if(this.complementar != null) return;
+        this.complementar = complementar;
+        complementar.setComplementar(this);
     }    
     
 }    

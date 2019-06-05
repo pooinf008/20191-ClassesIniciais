@@ -2,16 +2,23 @@ public class ContadorDeVoltas{
     private int qtdeVoltas;
     
     public void reset(){
-        qtdeVoltas = 0;
+        this.qtdeVoltas = 0;
     }    
     
     public void tick(){
-        qtdeVoltas++;
+        this.tick(1);
+    }   
+    
+    public void tick(int qtdeVoltas){
+        this.qtdeVoltas = this.qtdeVoltas + qtdeVoltas;
     }    
+    
 
-    public int buscarQtdeVoltas(){
-        return qtdeVoltas;
-    }    
+    public int getQtdeVoltas(){
+        return this.qtdeVoltas;
+    }   
+    
+   
     
     
 }    

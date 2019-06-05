@@ -2,14 +2,14 @@ public class Lampada{
    private boolean estado;
    
    public void acender(){
-       estado = true;
+       this.estado = true;
    }    
 
    public void apagar(){
-       estado = false;
+       this.estado = false;
    }    
    
-   public boolean estaAcesa(){
-       return estado;
+   public boolean isAcesa(){
+       return this.estado;
    }    
 }    
