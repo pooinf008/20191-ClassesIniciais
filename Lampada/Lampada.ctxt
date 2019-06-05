@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Lampada
+comment1.params=
+comment1.target=void\ acender()
+comment2.params=
+comment2.target=void\ apagar()
+comment3.params=
+comment3.target=boolean\ estaAcesa()
+numComments=4

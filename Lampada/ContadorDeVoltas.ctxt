@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ContadorDeVoltas
+comment1.params=
+comment1.target=void\ reset()
+comment2.params=
+comment2.target=void\ tick()
+comment3.params=
+comment3.target=int\ buscarQtdeVoltas()
+numComments=4

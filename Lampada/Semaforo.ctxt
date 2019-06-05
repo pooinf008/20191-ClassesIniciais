@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Semaforo
+comment1.params=
+comment1.target=void\ abrir()
+comment2.params=
+comment2.target=void\ fechar()
+comment3.params=
+comment3.target=boolean\ vermelho()
+comment4.params=
+comment4.target=boolean\ verde()
+comment5.params=
+comment5.target=void\ zerar()
+comment6.params=
+comment6.target=int\ getQtdeAbertura()
+numComments=7
