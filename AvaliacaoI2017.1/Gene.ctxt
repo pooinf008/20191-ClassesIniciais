@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Gene
+comment1.params=valor
+comment1.target=Gene(int)
+comment10.params=gene
+comment10.target=int\ getAfinidade(Gene)
+comment2.params=
+comment2.target=Gene()
+comment3.params=gene
+comment3.target=Gene(Gene)
+comment4.params=valor
+comment4.target=void\ setValor(int)
+comment5.params=
+comment5.target=int\ getValor()
+comment6.params=gene
+comment6.target=boolean\ equals(Gene)
+comment7.params=
+comment7.target=Gene\ clonar()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=valorProteina
+comment9.target=int\ getAfinidade(int)
+numComments=11
