@@ -23,13 +23,11 @@ public class Cromossomo{
     
     public Cromossomo clonar(){
         Cromossomo clone = new Cromossomo(this.tamanho());
-        for(int iCont = 0; iCont < this.tamanho(); iCont++){
-            Gene atual = this.getGene(iCont);
-            if(atual == null)
-              clone.setGene(iCont, null);
-            else
-              clone.setGene(iCont, atual.clonar());
-        }    
+        for(int iCont = 0; iCont < this.tamanho(); iCont++)
+          clone.setGene(iCont, 
+                       (this.getGene(iCont) == null) ? 
+                        null : 
+                        this.getGene(iCont).clonar());
         return clone;
     }    
 }
