@@ -1,5 +1,15 @@
 public class Teste{
     
+    public void rodar3(){
+        Cromossomo c1 = new Cromossomo("00*056987");
+        Cromossomo c2 = new Cromossomo("08*056987002");
+        
+        System.out.println(c1.getPctIdentidade(c2));
+        System.out.println(c2.getPctIdentidade(c1));
+        
+    }    
+    
+    
     public void rodar2(){
         String abc = new String("ABC");
         String ABC = "ABC";

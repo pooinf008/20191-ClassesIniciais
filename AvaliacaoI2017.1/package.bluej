@@ -1,10 +1,13 @@
 #BlueJ package file
-dependency1.from=Teste
+dependency1.from=Cromossomo
 dependency1.to=Gene
 dependency1.type=UsesDependency
-dependency2.from=Cromossomo
-dependency2.to=Gene
+dependency2.from=Teste
+dependency2.to=Cromossomo
 dependency2.type=UsesDependency
+dependency3.from=Teste
+dependency3.to=Gene
+dependency3.type=UsesDependency
 editor.fx.0.height=744
 editor.fx.0.width=1040
 editor.fx.0.x=-8
@@ -19,7 +22,7 @@ package.editor.x=0
 package.editor.y=0
 package.frame.height=744
 package.frame.width=1040
-package.numDependencies=2
+package.numDependencies=3
 package.numTargets=3
 package.showExtends=true
 package.showUses=true
