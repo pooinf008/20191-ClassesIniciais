@@ -7,7 +7,24 @@ public class Teste{
         System.out.println(c1.getPctIdentidade(c2));
         System.out.println(c2.getPctIdentidade(c1));
         
-    }    
+    }  
+    
+    
+    public void rodar4(){
+        Cromossomo c1 = new Cromossomo("12345678");
+        Cromossomo c2 = new Cromossomo("654321");
+        
+        System.out.println(c1);
+        System.out.println(c2);
+        
+        
+        c1.crossover(c2, 3);
+
+        System.out.println(c1);
+        System.out.println(c2);
+        
+        
+    }      
     
     
     public void rodar2(){

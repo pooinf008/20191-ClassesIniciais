@@ -60,5 +60,33 @@ public class Cromossomo{
                 ndxSimilaridade -= 1;   
             }            
         return ((double)ndxSimilaridade) / this.tamanho();  
+    } 
+    
+    public void crossover(Cromossomo idn, int ponto){
+        Gene[] me = new Gene[idn.tamanho()];
+        Gene[] other = new Gene[this.tamanho()];
+        
+        for(int iCont = 0; iCont < ponto; iCont++){
+            me[iCont] = this.getGene(iCont);
+            other[iCont] = idn.getGene(iCont);
+        }    
+        
+        for(int iCont = ponto; iCont < me.length; iCont++)
+            me[iCont] = idn.getGene(iCont);
+
+        for(int iCont = ponto; iCont < other.length; iCont++)
+            other[iCont] = this.getGene(iCont);
+        
+        this.genes = me;
+        idn.genes = other;
+        
+    }
+    
+    
+    public String toString(){
+        String str = "";
+        for(Gene g : this.genes)
+          str+= g.getValor();
+        return str;  
     }    
 }
