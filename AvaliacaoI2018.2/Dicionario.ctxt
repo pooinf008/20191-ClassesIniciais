@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Dicionario
+comment1.params=
+comment1.target=Dicionario()
+comment2.params=verbete
+comment2.target=void\ adicionarVerbete(Verbete)
+comment3.params=entradas
+comment3.target=Verbete[]\ toVerbete(java.lang.String[])
+comment4.params=entrada
+comment4.target=Verbete\ getVerbete(java.lang.String)
+comment5.params=frase1\ frase2
+comment5.target=boolean\ hasProximidadeSemantica(java.lang.String[],\ java.lang.String[])
+comment6.params=origem\ ref
+comment6.target=boolean\ hasEquivalencia(java.lang.String[],\ java.lang.String[])
+comment7.params=o\ verbetes
+comment7.target=boolean\ hasEquivalencia(Verbete,\ Verbete[])
+numComments=8

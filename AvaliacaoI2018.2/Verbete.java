@@ -28,11 +28,15 @@ public class Verbete{
         return this.entrada;
     }
     
+    public String getDescricao(){
+        return this.descricao;
+    }    
+    
     public ClasseGramatical getClasseGramatical(){
         return this.classeGramatical;
     }    
     
-    public void adicionarSinonimo(Verbete verbete){
+    private void addSinonimo(Verbete verbete){
         Verbete[] aux = new Verbete[this.sinonimos.length + 1];
         for(int iCont = 0; iCont < this.sinonimos.length; iCont++)
           aux[iCont] = this.sinonimos[iCont];
@@ -52,11 +56,38 @@ public class Verbete{
     } 
     
     public boolean equivalente(Verbete verbete){
-        if(this.equals(verbete)) return true;
+        return this.equals(verbete) || this.isSinonimo(verbete);    
+    }
+    
+    
+    public boolean isSinonimo(Verbete verbete){
         for(Verbete v : this.sinonimos)
           if(v.equals(verbete))
-            return true;
+            return true;   
         return false;    
     }    
+    
+    public void adicionarSinonimo(Verbete verbete){
+        if(this.isSinonimo(verbete)) return;
+        this.addSinonimo(verbete);
+        verbete.adicionarSinonimo(this);
+    }  
+    
+    public boolean isNome(){
+        return 
+            this.getClasseGramatical().equals(ClasseGramatical.SUBSTANTIVO) || 
+            this.getClasseGramatical().equals(ClasseGramatical.ADJETIVO) ||
+            this.getClasseGramatical().equals(ClasseGramatical.PRONOME);        
+    }    
+    
+    public String toString(){
+        String str = this.getEntrada() + "\n" +
+                     this.getClasseGramatical() + ".\n" + 
+                     this.getDescricao() + ".\nsinônimos:";
+        for(Verbete v : this.sinonimos) 
+          str = str + v.getEntrada() + " - ";
+        return str + "\n";  
+    }    
+    
     
 }
