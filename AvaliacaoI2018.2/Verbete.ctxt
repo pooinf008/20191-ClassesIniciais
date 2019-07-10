@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Verbete
+comment1.params=entrada\ descricao\ classeGramatical
+comment1.target=Verbete(java.lang.String,\ java.lang.String,\ ClasseGramatical)
+comment10.params=verbete
+comment10.target=boolean\ equivalente(Verbete)
+comment2.params=entrada
+comment2.target=void\ setEntrada(java.lang.String)
+comment3.params=descricao
+comment3.target=void\ setDescricao(java.lang.String)
+comment4.params=classeGramatical
+comment4.target=void\ setClasseGramatical(ClasseGramatical)
+comment5.params=
+comment5.target=java.lang.String\ getEntrada()
+comment6.params=
+comment6.target=ClasseGramatical\ getClasseGramatical()
+comment7.params=verbete
+comment7.target=void\ adicionarSinonimo(Verbete)
+comment8.params=entrada
+comment8.target=boolean\ isEntrada(java.lang.String)
+comment9.params=verbete
+comment9.target=boolean\ equals(Verbete)
+numComments=11
