@@ -5,12 +5,13 @@ public class Dicionario{
         this.verbetes = new Verbete[0];
     }    
     
-    public void adicionarVerbete(Verbete verbete){
+    public Dicionario adicionarVerbete(Verbete verbete){
         Verbete[] aux = new Verbete[this.verbetes.length + 1];
         for(int iCont = 0; iCont < this.verbetes.length; iCont++)
           aux[iCont] = this.verbetes[iCont];
         aux[aux.length -1] = verbete;  
         this.verbetes = aux;
+        return this;
     } 
     
     public Verbete[] toVerbete(String[] entradas){
@@ -28,16 +29,16 @@ public class Dicionario{
     }
     
     public boolean hasProximidadeSemantica(String[] frase1, String[] frase2){
-        return this.hasEquivalencia(frase1, frase2) &&
-               this.hasEquivalencia(frase2, frase1);
+        Verbete[] verbeteFrase1 = this.toVerbete(frase1);
+        Verbete[] verbeteFrase2 = this.toVerbete(frase2); 
+        return this.hasEquivalencia(verbeteFrase1, verbeteFrase2) &&
+               this.hasEquivalencia(verbeteFrase2, verbeteFrase1);
     }    
     
-    private boolean hasEquivalencia(String[] origem, String[] ref){
-        Verbete[] verbeteOrigem = this.toVerbete(origem);
-        Verbete[] verbeteRef = this.toVerbete(ref); 
-        for(Verbete vOrigem : verbeteOrigem)
-          if(vOrigem.isNome())
-           if(!this.hasEquivalencia(vOrigem, verbeteRef))
+    private boolean hasEquivalencia(Verbete[] origem, Verbete[] ref){
+        for(Verbete vOrigem : origem)
+          if(vOrigem!= null && vOrigem.isNome())
+           if(!this.hasEquivalencia(vOrigem, ref))
              return false;
         return true;     
     }    

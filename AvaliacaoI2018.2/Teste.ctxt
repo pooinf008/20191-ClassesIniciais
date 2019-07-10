@@ -1,5 +1,11 @@
 #BlueJ class context
 comment0.target=Teste
 comment1.params=
-comment1.target=void\ run()
-numComments=2
+comment1.target=Teste()
+comment2.params=
+comment2.target=void\ criarVerbetes()
+comment3.params=
+comment3.target=void\ exemploQuestao10()
+comment4.params=
+comment4.target=void\ run()
+numComments=5
