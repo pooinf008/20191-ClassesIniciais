@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Playlist
+comment1.params=nome
+comment1.target=Playlist(java.lang.String)
+comment2.params=nome
+comment2.target=void\ setNome(java.lang.String)
+comment3.params=musica
+comment3.target=void\ addMusica(Musica)
+comment4.params=musica
+comment4.target=boolean\ pertence(Musica)
+comment5.params=
+comment5.target=Musica[]\ getMusicas()
+numComments=6

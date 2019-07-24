@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BaseMusicas
+comment1.params=
+comment1.target=BaseMusicas()
+comment2.params=musica
+comment2.target=void\ addMusica(Musica)
+comment3.params=original\ nome\ duracao
+comment3.target=Playlist\ getFlow(Playlist,\ java.lang.String,\ long)
+numComments=4
