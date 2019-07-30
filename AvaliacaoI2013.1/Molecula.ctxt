@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Molecula
+comment0.text=Quest\u00E3o\ II.i
+comment1.params=
+comment1.target=Atomo\ getAtomoMenorNumeroAtomico()
+comment2.params=atomo
+comment2.target=int\ getQuantidadeAtomos(Atomo)
+comment3.params=atomo
+comment3.target=boolean\ hasAtomo(Atomo)
+comment4.params=molecula
+comment4.target=boolean\ hasAllAtomos(Molecula)
+comment5.params=molecula
+comment5.target=boolean\ sameAtomos(Molecula)
+numComments=6

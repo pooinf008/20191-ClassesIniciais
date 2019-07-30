@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Camada
+comment0.text=Questao\ I.v\ -\ toda\ a\ enum
+comment1.params=valorCamada
+comment1.target=Camada(int)
+comment2.params=
+comment2.target=int\ getValorCamada()
+numComments=3

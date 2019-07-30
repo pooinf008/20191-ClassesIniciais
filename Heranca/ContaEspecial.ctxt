@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ContaEspecial
+comment1.params=id\ nome\ limite
+comment1.target=ContaEspecial(java.lang.String,\ java.lang.String,\ double)
+comment2.params=limite
+comment2.target=void\ setLimite(double)
+comment3.params=
+comment3.target=double\ getLimite()
+comment4.params=valor
+comment4.target=void\ sacar(double)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

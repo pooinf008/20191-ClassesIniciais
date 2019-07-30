@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Atomo
+comment0.text=Questao\ I.i
+comment1.params=numeroAtomico\ numeroMassa\ nomeElementoQuimico
+comment1.target=Atomo(int,\ double,\ java.lang.String)
+comment1.text=Questao\ I.ii
+comment2.params=numeroAtomico
+comment2.target=void\ setNumeroAtomico(int)
+comment2.text=Questao\ I.ii
+comment3.params=numeroMassa
+comment3.target=void\ setNumeroMassa(double)
+comment3.text=Questao\ I.ii
+comment4.params=nomeElementoQuimico
+comment4.target=void\ setNomeElementoQuimico(java.lang.String)
+comment4.text=Questao\ I.ii
+comment5.params=
+comment5.target=int\ getNumeroAtomico()
+comment5.text=Questao\ I.iii
+comment6.params=atomo
+comment6.target=boolean\ equals(Atomo)
+comment6.text=Questao\ I.iv
+comment7.params=numeroCamada
+comment7.target=int\ getQtdeEletrons(Camada)
+comment7.text=Questao\ I.v
+numComments=8
