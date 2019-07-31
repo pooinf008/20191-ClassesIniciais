@@ -4,4 +4,6 @@ comment1.params=
 comment1.target=void\ run()
 comment2.params=
 comment2.target=void\ run2()
-numComments=3
+comment3.params=
+comment3.target=void\ run3()
+numComments=4

@@ -19,9 +19,10 @@ public class App{
     }  
     
     public void run2(){
-        ContaEspecial c = new ContaEspecial("100", "Especial100", 500);
+        FactoryConta fc = new FactoryConta();
+        ContaCorrente c = fc.getConta();
+        ContaCorrente c2 = fc.getConta();
 
-        c.setLimite(500);
         System.out.println(c);
         
         System.out.println("-->\tDepositando R$ 100,00");
@@ -36,6 +37,19 @@ public class App{
         c.sacar(60);
         System.out.println(c);
         
-    }      
+        
+        System.out.println(c.equals(c2));
+        
+        System.out.println(c.equals("ABC"));        
+        
+    }     
     
+    public void run3(){
+        byte b1 = 10;
+        byte b2 = 10;        
+        int b3 = b1 + b2;
+        
+        System.out.println(b3);
+        
+    }
 }

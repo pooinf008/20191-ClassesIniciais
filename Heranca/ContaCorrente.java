@@ -11,7 +11,11 @@ public class ContaCorrente{
     
     private void setId(String id){
         this.id = id;
-    }    
+    }   
+    
+    private String getId(){
+        return this.id;
+    }        
     
     public void depositar(double valor){
         this.saldo += valor;
@@ -32,7 +36,9 @@ public class ContaCorrente{
     }    
     
     public boolean equals(Object oConta){
-        return false;
+        if(!(oConta instanceof ContaCorrente))
+          return false;
+        return this.getId().equals(((ContaCorrente)oConta).getId());
     }
     
     

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ContaInvestimento
+comment1.params=id\ nome
+comment1.target=ContaInvestimento(java.lang.String,\ java.lang.String)
+comment2.params=valor
+comment2.target=void\ depositar(double)
+numComments=3
