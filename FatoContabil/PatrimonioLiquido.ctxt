@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=PatrimonioLiquido
+comment1.params=valor
+comment1.target=void\ creditar(double)
+comment2.params=valor
+comment2.target=void\ debitar(double)
+numComments=3

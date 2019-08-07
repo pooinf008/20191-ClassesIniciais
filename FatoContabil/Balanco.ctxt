@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Balanco
+comment1.params=nome
+comment1.target=Conta\ findContaByNome(java.lang.String)
+comment2.params=nomeCredito\ nomeDebito\ valor
+comment2.target=void\ ajustar(java.lang.String,\ java.lang.String,\ double)
+numComments=3
