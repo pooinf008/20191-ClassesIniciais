@@ -27,17 +27,18 @@ public abstract class UnidadeSensora{
     }    
     
     
-    public Mensagem processar(){
+    public Mensagem executar(){
         Mensagem mensagem = new Mensagem(this.id);
         for(UnidadeSensora us : this.filhas){
-          Mensagem m = us.processar();
-          System.out.println(m);
-          mensagem = this.concatenar(mensagem, m);
-          
+          Mensagem m = us.executar();
+          mensagem = this.processar(mensagem, m);
         }  
+        mensagem = this.processar(mensagem);
+        System.out.println(mensagem);
         return mensagem;
     } 
     
-    public abstract Mensagem concatenar(Mensagem minha, Mensagem filha);
+    public abstract Mensagem processar(Mensagem minha, Mensagem filha);
+    public abstract Mensagem processar(Mensagem minha);    
     
 }

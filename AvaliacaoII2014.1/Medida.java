@@ -8,11 +8,16 @@ public class Medida{
     }    
     
     public double getValor(){
-        return valor;
+        return this.valor;
     }   
     
+    public double getQtde(){
+        return this.qtdeNos;
+    }   
+    
+    
     public String toString(){
-        return "<" + valor + ";" + qtdeNos + ">";
+        return "<" + this.valor + ";" + this.qtdeNos + ">";
     }    
     
 }

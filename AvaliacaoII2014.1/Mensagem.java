@@ -9,11 +9,21 @@ public class Mensagem{
     
     public double getValorMedio(){
         double valor =  0;
-        for(Medida m : this.valores)
-          valor += m.getValor();
-        return valor / this.valores.length;  
-
+        int qtde = 0;
+        for(Medida m : this.valores){
+          valor += m.getValor() * m.getQtde();
+          qtde += m.getQtde();
+        }  
+        return valor / qtde;  
     } 
+    
+    public int getQtdeNos(){
+        int qtde = 0;
+        for(Medida m : this.valores){
+          qtde += m.getQtde();
+        }  
+        return qtde;
+    }    
     
     public Medida[] getValores(){
         return this.valores;
@@ -33,8 +43,8 @@ public class Mensagem{
           
     }    
     
-    public void adicionar(double valor){
-        Medida m = new Medida(valor, 1);
+    public void adicionar(double valor, int qtde){
+        Medida m = new Medida(valor, qtde);
         
         Medida[] novo = new Medida[this.valores.length + 1];
         int iCont;
@@ -42,8 +52,18 @@ public class Mensagem{
           novo[iCont] =this.valores[iCont];
         novo[novo.length -1] = m;
         this.valores = novo;
-        
-          
+    }    
+    
+    public void adicionar(double valor){
+        this.adicionar(valor, 1);
+    }  
+    
+    
+    public void fundir(){
+        double valor = this.getValorMedio();
+        int qtde = this.getQtdeNos();
+        this.valores = new Medida[1];
+        this.valores[0] = new Medida(valor, qtde);
     }    
     
     

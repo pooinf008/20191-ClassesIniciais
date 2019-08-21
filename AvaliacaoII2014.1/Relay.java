@@ -4,9 +4,9 @@ public class Relay extends NoSensor{
         super(id);
     } 
     
-    public  Mensagem concatenar(Mensagem minha, Mensagem filha){
-        minha.adicionar(filha.getValores());
-        minha.adicionar(this.valor);
+    public Mensagem processar(Mensagem minha){
+        minha.adicionar(valor);
         return minha;
     }    
+    
 }

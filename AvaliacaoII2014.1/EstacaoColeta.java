@@ -4,23 +4,32 @@ public class EstacaoColeta extends UnidadeSensora{
     
     public EstacaoColeta(String id){
         super(id);
+        this.historicoValores = new double[0];
     }    
     
     public double getValorMedio(){
-        Mensagem mensagem = this.processar();
-        double valor = mensagem.getValorMedio();
-        this.armazenar(valor);
-        return valor;
+        Mensagem mensagem = this.executar();
+        return mensagem.getValorMedio();
     }    
     
+    public  Mensagem processar(Mensagem minha){
+        this.armazenar(minha.getValorMedio());
+        return minha;
+    }     
+    
 
-    public  Mensagem concatenar(Mensagem minha, Mensagem filha){
+    public  Mensagem processar(Mensagem minha, Mensagem filha){
         minha.adicionar(filha.getValores());
-        minha.adicionar(0);
         return minha;
     }   
     
     public void armazenar(double valor){
+        double[] novo = new double[this.historicoValores.length + 1];
+        int iCont;
+        for(iCont = 0; iCont < this.historicoValores.length; iCont++)
+          novo[iCont] =this.historicoValores[iCont]; 
+        novo[novo.length - 1] = valor;
+        this.historicoValores = novo;
     }    
     
 }

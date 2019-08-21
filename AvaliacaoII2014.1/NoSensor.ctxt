@@ -2,4 +2,10 @@
 comment0.target=NoSensor
 comment1.params=id
 comment1.target=NoSensor(java.lang.String)
-numComments=2
+comment2.params=valor
+comment2.target=void\ setValor(double)
+comment3.params=
+comment3.target=void\ setValor()
+comment4.params=minha\ filha
+comment4.target=Mensagem\ processar(Mensagem,\ Mensagem)
+numComments=5

@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=Controlador
 comment1.params=
-comment1.target=double\ getValorMedio()
+comment1.target=Controlador()
 comment2.params=
-comment2.target=void\ asm()
-numComments=3
+comment2.target=double\ getValorMedio()
+comment3.params=
+comment3.target=void\ asm()
+numComments=4

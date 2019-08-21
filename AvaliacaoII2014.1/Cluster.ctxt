@@ -2,6 +2,6 @@
 comment0.target=Cluster
 comment1.params=id
 comment1.target=Cluster(java.lang.String)
-comment2.params=minha\ filha
-comment2.target=Mensagem\ concatenar(Mensagem,\ Mensagem)
+comment2.params=minha
+comment2.target=Mensagem\ processar(Mensagem)
 numComments=3
