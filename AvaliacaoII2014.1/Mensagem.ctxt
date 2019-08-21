@@ -1,3 +1,15 @@
 #BlueJ class context
 comment0.target=Mensagem
-numComments=1
+comment1.params=id
+comment1.target=Mensagem(java.lang.String)
+comment2.params=
+comment2.target=double\ getValorMedio()
+comment3.params=
+comment3.target=Medida[]\ getValores()
+comment4.params=medida
+comment4.target=void\ adicionar(Medida[])
+comment5.params=valor
+comment5.target=void\ adicionar(double)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

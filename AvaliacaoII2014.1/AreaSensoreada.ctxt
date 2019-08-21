@@ -1,3 +1,7 @@
 #BlueJ class context
 comment0.target=AreaSensoreada
-numComments=1
+comment1.params=
+comment1.target=double\ getValorMedio()
+comment2.params=ec
+comment2.target=void\ setEstacaoBase(EstacaoColeta)
+numComments=3

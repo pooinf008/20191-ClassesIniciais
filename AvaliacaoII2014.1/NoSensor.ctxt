@@ -1,3 +1,5 @@
 #BlueJ class context
 comment0.target=NoSensor
-numComments=1
+comment1.params=id
+comment1.target=NoSensor(java.lang.String)
+numComments=2

@@ -1,3 +1,13 @@
 #BlueJ class context
 comment0.target=UnidadeSensora
-numComments=1
+comment1.params=id
+comment1.target=UnidadeSensora(java.lang.String)
+comment2.params=us
+comment2.target=UnidadeSensora\ addFilha(UnidadeSensora)
+comment3.params=us
+comment3.target=void\ setPai(UnidadeSensora)
+comment4.params=
+comment4.target=Mensagem\ processar()
+comment5.params=minha\ filha
+comment5.target=Mensagem\ concatenar(Mensagem,\ Mensagem)
+numComments=6

@@ -1,5 +1,10 @@
-public class NoSensor extends UnidadeSensora{
+public abstract class NoSensor extends UnidadeSensora{
 
-    private double valor;
+    
+    public NoSensor(String id){
+        super(id);
+    }    
+    
+    protected double valor;
     
 }

@@ -1,3 +1,7 @@
 #BlueJ class context
 comment0.target=Cluster
-numComments=1
+comment1.params=id
+comment1.target=Cluster(java.lang.String)
+comment2.params=minha\ filha
+comment2.target=Mensagem\ concatenar(Mensagem,\ Mensagem)
+numComments=3
