@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=NoSensor
-comment1.params=id
-comment1.target=NoSensor(java.lang.String)
+comment1.params=id\ latitude\ longitude\ altura
+comment1.target=NoSensor(java.lang.String,\ double,\ double,\ double)
 comment2.params=valor
 comment2.target=void\ setValor(double)
 comment3.params=

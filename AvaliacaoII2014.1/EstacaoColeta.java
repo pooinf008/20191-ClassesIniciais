@@ -2,8 +2,9 @@ public class EstacaoColeta extends UnidadeSensora{
     private double[] historicoValores;
     
     
-    public EstacaoColeta(String id){
-        super(id);
+    public EstacaoColeta(String id, double latitude,
+                          double longitude, double altura){
+        super(id, latitude, longitude, altura);
         this.historicoValores = new double[0];
     }    
     

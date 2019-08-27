@@ -6,9 +6,17 @@ public abstract class UnidadeSensora{
     private UnidadeSensora pai;
     private UnidadeSensora[] filhas;
     
-    public UnidadeSensora(String id){
+    public UnidadeSensora(String id, double latitude,
+                          double longitude, double altura){
         this.id = id;
         this.filhas = new UnidadeSensora[0];
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.altura = altura;
+    }  
+    
+    public String getId(){
+        return this.id;
     }    
     
     public UnidadeSensora addFilha(UnidadeSensora us){
@@ -39,6 +47,12 @@ public abstract class UnidadeSensora{
     } 
     
     public abstract Mensagem processar(Mensagem minha, Mensagem filha);
-    public abstract Mensagem processar(Mensagem minha);    
+    public abstract Mensagem processar(Mensagem minha);   
+    
+    public double getDistancia(UnidadeSensora us){
+        return Math.sqrt(Math.pow(this.latitude - us.latitude ,2) + 
+                         Math.pow(this.longitude - us.longitude,2) +
+                         Math.pow(this.altura - us.altura,2));
+    }    
     
 }

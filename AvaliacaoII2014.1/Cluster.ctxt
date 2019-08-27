@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Cluster
-comment1.params=id
-comment1.target=Cluster(java.lang.String)
+comment1.params=id\ latitude\ longitude\ altura
+comment1.target=Cluster(java.lang.String,\ double,\ double,\ double)
 comment2.params=minha
 comment2.target=Mensagem\ processar(Mensagem)
 numComments=3

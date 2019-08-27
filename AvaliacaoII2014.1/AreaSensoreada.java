@@ -24,6 +24,25 @@ public class AreaSensoreada{
     
     private void setEstacaoBase(EstacaoColeta ec){
         this.estacaoBase = ec;
+    } 
+    
+    public void orderByDistancia(){
+        for(int i = 0; i < this.unidades.length - 1; i++)
+          for(int j = i+1; j < this.unidades.length; j++)
+            if(this.estacaoBase.getDistancia(this.unidades[i]) 
+               > this.estacaoBase.getDistancia(this.unidades[j])){
+               UnidadeSensora aux = this.unidades[i];
+               this.unidades[i] = this.unidades[j];
+               this.unidades[j] = aux;
+            } 
+    } 
+    
+    public UnidadeSensora[] getUnidades(){
+        return this.unidades;
+    }  
+    
+    public EstacaoColeta getEstacaoBase(){
+        return this.estacaoBase;
     }    
     
 }

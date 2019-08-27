@@ -1,7 +1,8 @@
 public class Cluster extends NoSensor{
     
-    public Cluster(String id){
-        super(id);
+    public Cluster(String id, double latitude,
+                          double longitude, double altura){
+        super(id, latitude, longitude, altura);
     }     
  
     

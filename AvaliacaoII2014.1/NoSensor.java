@@ -2,8 +2,9 @@ public abstract class NoSensor extends UnidadeSensora{
 
     protected double valor;
     
-    public NoSensor(String id){
-        super(id);
+    public NoSensor(String id, double latitude,
+                    double longitude, double altura){
+        super(id, latitude, longitude, altura);
         this.setValor();
     }    
     

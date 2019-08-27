@@ -6,4 +6,6 @@ comment2.params=
 comment2.target=double\ getValorMedio()
 comment3.params=
 comment3.target=void\ asm()
-numComments=4
+comment4.params=
+comment4.target=void\ printByDistancia()
+numComments=5
