@@ -56,6 +56,12 @@ public class Controlador{
       for(UnidadeSensora uc : this.area.getUnidades())
         System.out.println(uc.getId() + "-" + 
                            uc.getDistancia(area.getEstacaoBase()));
-  }    
+  }  
+  
+  public void printMedidas(){
+      this.area.ordenarMedidas();
+      for(double medida : this.area.getMedidas())
+        System.out.println(medida);
+  }  
   
 }

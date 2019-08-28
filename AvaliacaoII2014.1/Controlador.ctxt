@@ -8,4 +8,6 @@ comment3.params=
 comment3.target=void\ asm()
 comment4.params=
 comment4.target=void\ printByDistancia()
-numComments=5
+comment5.params=
+comment5.target=void\ printMedidas()
+numComments=6

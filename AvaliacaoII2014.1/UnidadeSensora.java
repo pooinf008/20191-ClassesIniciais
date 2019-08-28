@@ -1,4 +1,4 @@
-public abstract class UnidadeSensora{
+public abstract class UnidadeSensora implements Ordenavel{
     private String id;
     private double latitude;
     private double longitude;
@@ -53,6 +53,16 @@ public abstract class UnidadeSensora{
         return Math.sqrt(Math.pow(this.latitude - us.latitude ,2) + 
                          Math.pow(this.longitude - us.longitude,2) +
                          Math.pow(this.altura - us.altura,2));
-    }    
+    }   
+    
+    
+    
+    public int compare(Ordenavel ordenavel){
+      EstacaoColeta ec = new EstacaoColeta("ec", 0, 0, 0);
+      if(!(ordenavel instanceof UnidadeSensora)) return 0;
+      UnidadeSensora us = (UnidadeSensora) ordenavel;
+      return (int) (this.getDistancia(ec) - us.getDistancia(ec));
+    }  
+    
     
 }

@@ -27,14 +27,8 @@ public class AreaSensoreada{
     } 
     
     public void orderByDistancia(){
-        for(int i = 0; i < this.unidades.length - 1; i++)
-          for(int j = i+1; j < this.unidades.length; j++)
-            if(this.estacaoBase.getDistancia(this.unidades[i]) 
-               > this.estacaoBase.getDistancia(this.unidades[j])){
-               UnidadeSensora aux = this.unidades[i];
-               this.unidades[i] = this.unidades[j];
-               this.unidades[j] = aux;
-            } 
+        ServicoOrdenacao ordenador = new ServicoOrdenacao();
+        ordenador.ordenar(this.unidades);
     } 
     
     public UnidadeSensora[] getUnidades(){
@@ -43,6 +37,14 @@ public class AreaSensoreada{
     
     public EstacaoColeta getEstacaoBase(){
         return this.estacaoBase;
+    } 
+    
+    public double[] getMedidas(){
+        return this.estacaoBase.getMedidas();
+    }      
+    
+    public void ordenarMedidas(){
+        this.estacaoBase.ordenarMedidas();        
     }    
     
 }
