@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ComparadorUSPorDistancia
+comment1.params=ec
+comment1.target=ComparadorUSPorDistancia(EstacaoColeta)
+comment2.params=t1\ t2
+comment2.target=int\ compare(java.lang.Object,\ java.lang.Object)
+numComments=3

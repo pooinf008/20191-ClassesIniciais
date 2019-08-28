@@ -6,6 +6,7 @@ public class Controlador{
   }    
   
   
+  
   public double getValorMedio(){
       return this.area.getValorMedio();
   };

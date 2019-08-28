@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=CompareTelefonePorNumero
+comment1.params=t1\ t2
+comment1.target=int\ compare(java.lang.Object,\ java.lang.Object)
+numComments=2

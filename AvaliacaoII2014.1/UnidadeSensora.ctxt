@@ -16,6 +16,4 @@ comment7.params=minha
 comment7.target=Mensagem\ processar(Mensagem)
 comment8.params=us
 comment8.target=double\ getDistancia(UnidadeSensora)
-comment9.params=ordenavel
-comment9.target=int\ compare(Ordenavel)
-numComments=10
+numComments=9

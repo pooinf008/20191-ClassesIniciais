@@ -28,7 +28,8 @@ public class AreaSensoreada{
     
     public void orderByDistancia(){
         ServicoOrdenacao ordenador = new ServicoOrdenacao();
-        ordenador.ordenar(this.unidades);
+        Comparador c = new ComparadorUSPorDistancia(this.estacaoBase);
+        ordenador.ordenar(this.unidades, c);
     } 
     
     public UnidadeSensora[] getUnidades(){
